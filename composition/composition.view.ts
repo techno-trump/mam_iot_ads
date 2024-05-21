@@ -1,5 +1,3 @@
-namespace $ {
-}
 namespace $.$$ {
 	export class $ayk_iot_ads_composition extends $.$ayk_iot_ads_composition {
 		// @ $mol_mem
@@ -12,9 +10,11 @@ namespace $.$$ {
 		// 	return current || ({} as $.$t_frame_data)[field];
 		// }
 		uri() {
+			console.log('uri')
 			return window.location.href;
 		}
 		sub() {
+			console.log( 'sub composition' )
 			return [this.Frame(0), this.Frame(1)];
 		}
 	}
