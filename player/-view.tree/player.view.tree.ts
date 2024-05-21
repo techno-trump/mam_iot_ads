@@ -3,28 +3,39 @@ namespace $ {
 		
 		/**
 		 * ```tree
-		 * meta $t_player_meta
+		 * meta $ayk_iot_ads_player_meta
 		 * ```
 		 */
 		@ $mol_mem
 		meta() {
-			const obj = new this.$.$t_player_meta()
+			const obj = new this.$.$ayk_iot_ads_player_meta()
 			
 			return obj
 		}
 		
 		/**
 		 * ```tree
-		 * sub /
-		 * 	\Player
-		 * 	<= meta_string
+		 * sub / <= Player_title
 		 * ```
 		 */
 		sub() {
 			return [
-				"Player",
-				this.meta_string()
+				this.Player_title()
 			] as readonly any[]
+		}
+		
+		/**
+		 * ```tree
+		 * Player_title $mol_paragraph title \Player
+		 * ```
+		 */
+		@ $mol_mem
+		Player_title() {
+			const obj = new this.$.$mol_paragraph()
+			
+			obj.title = () => "Player"
+			
+			return obj
 		}
 	}
 	

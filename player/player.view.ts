@@ -22,9 +22,9 @@ namespace $ {
 }
 namespace $.$$ {
 	export class $ayk_iot_ads_player extends $.$ayk_iot_ads_player {
-		@ $mol_mem
-		meta_string() {
-			return JSON.stringify(this.meta());
-		}
+		// @ $mol_mem
+		// meta_string() {
+		// 	return JSON.stringify(this.meta());
+		// }
 	}
 }

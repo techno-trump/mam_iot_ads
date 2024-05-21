@@ -1,6 +1,6 @@
 
 $ayk_iot_ads_player $mol_view
-	meta null $ayk_iot_ads_player_meta
+	meta null | $ayk_iot_ads_player_meta
 	sub /
 		<= Player_title $mol_paragraph
 			title \Player
